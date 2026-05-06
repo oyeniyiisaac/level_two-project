@@ -208,8 +208,8 @@ const allDishes = (foodArray, showRemoveFav = false) => {
 
         html += `
         <div class="food-card-item my-2 flex h-full self-stretch items-stretch justify-center" data-food-id="${itemId}">
-            <div class="food-card flex w-full max-w-[360px] flex-col bg-[#fbf3f2] my-2 border border-none rounded-md shadow-xl overflow-hidden">
-                    <img src="${imgPath}" alt="${element.name}" class="food-card__image w-full object-cover rounded-t-md">
+            <div class="food-card flex w-full max-w-[360px] flex-col bg-[#fbf3f2] my-2 border border-none rounded-md shadow-xl overflow-hidden transition delay-150 duration-300 ease-in-out hover:-translate-x-1 hover:scale-105">
+                    <img src="${imgPath}" alt="${element.name}" class="food-card__image w-full object-cover rounded-t-md transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110">
                 <div class="food-card__body flex flex-1 flex-col bg-[#fbf3f2] p-3 md:p-5">
                         <div class="flex items-start justify-between gap-3">
                             <h1 class="text-lg md:text-xl font-extrabold leading-tight">${element.name}</h1>
@@ -222,19 +222,19 @@ const allDishes = (foodArray, showRemoveFav = false) => {
                         </div>
                         <hr class="text-[#888888] border-1 rounded-sm my-2">
                         <div class="flex flex-wrap gap-1 items-center my-1">
-                            <p>${spicy}</p>
-                            <p>${vegetarian}</p>
+                            <p class="floating">${spicy}</p>
+                            <p class="floating">${vegetarian}</p>
                         </div>
                         <div class="flex flex-wrap gap-2 items-center my-1">
-                            <p class="flex bg-[#fadcd0] px-2 rounded-xl items-center font-semibold"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#000" fill-rule="evenodd" d="m12.6 11.503l3.891 3.891l-.848.849L11.4 12V6h1.2zM12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10s-4.477 10-10 10m0-1.2a8.8 8.8 0 1 0 0-17.6a8.8 8.8 0 0 0 0 17.6"/></svg>${element.preparationTime}</p>
-                            <p class="bg-[#fadcd0] px-2 rounded-xl font-semibold">${element.calories} KCAL</p>
+                            <p class="floating flex bg-[#fadcd0] px-2 rounded-xl items-center font-semibold"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#000" fill-rule="evenodd" d="m12.6 11.503l3.891 3.891l-.848.849L11.4 12V6h1.2zM12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10s-4.477 10-10 10m0-1.2a8.8 8.8 0 1 0 0-17.6a8.8 8.8 0 0 0 0 17.6"/></svg>${element.preparationTime}</p>
+                            <p class="floating bg-[#fadcd0] px-2 rounded-xl font-semibold">${element.calories} KCAL</p>
                         </div>
                         <hr class="text-[#888888] border-1 rounded-sm my-2">
                         <div class="food-card__description flex-1 overflow-y-auto px-1 py-2 my-2">
                             <p class="text-xs sm:text-sm leading-relaxed">${element.description}</p>
                         </div>
 
-                        <button href="#" class="read-more-btn mt-auto inline-flex items-center text-body hover:bg-neutral-tertiary-medium hover:text-heading font-medium leading-5 text-xs sm:text-sm px-4 py-2.5 focus:outline-none" data-index="${i}">
+                        <button href="#" class="read-more-btn floating-btn2 mt-auto inline-flex items-center text-body hover:bg-neutral-tertiary-medium hover:text-heading font-medium leading-5 text-xs sm:text-sm px-4 py-2.5 focus:outline-none" data-index="${i}">
                             view details
                             <svg class="w-4 h-4 ms-1.5 rtl:rotate-180 -me-0.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4"/></svg>
                         </button>

@@ -25,6 +25,19 @@
         transform: translateY(0px);
     }
 }
+@keyframes float3 {
+    0% {
+        transform: translatex(0px);
+    }
+
+    50% {
+        transform: translatex(10px);
+    }
+
+    100% {
+        transform: translatex(0px);
+    }
+}
 
 
 .floating-btn {
@@ -33,6 +46,9 @@
 
 .floating-btn2 {
     animation: float2 2s ease-in-out infinite;
+}
+.floating {
+    animation: float3 2s ease-in-out infinite;
 }
 
 .food-card {
