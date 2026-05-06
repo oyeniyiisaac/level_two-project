@@ -1,0 +1,72 @@
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes float2 {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+
+.floating-btn {
+    animation: float 2s ease-in-out infinite;
+}
+
+.floating-btn2 {
+    animation: float2 2s ease-in-out infinite;
+}
+
+.food-card {
+    height: 600px;
+}
+
+.food-card__image {
+    height: 13rem;
+}
+
+.food-card__body {
+    min-height: 0;
+}
+
+.food-card__description {
+    min-height: 0;
+}
+
+@media (min-width: 640px) {
+    .food-card {
+        height: 630px;
+    }
+
+    .food-card__image {
+        height: 14rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .food-card {
+        height: 660px;
+    }
+
+    .food-card__image {
+        height: 15rem;
+    }
+}
