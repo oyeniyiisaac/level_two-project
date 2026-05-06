@@ -47,7 +47,7 @@
 .floating-btn2 {
     animation: float2 2s ease-in-out infinite;
 }
-.floating {
+.floating-one {
     animation: float3 2s ease-in-out infinite;
 }
 

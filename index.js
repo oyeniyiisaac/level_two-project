@@ -222,12 +222,12 @@ const allDishes = (foodArray, showRemoveFav = false) => {
                         </div>
                         <hr class="text-[#888888] border-1 rounded-sm my-2">
                         <div class="flex flex-wrap gap-1 items-center my-1">
-                            <p class="floating">${spicy}</p>
-                            <p class="floating">${vegetarian}</p>
+                            <p class="floating-one">${spicy}</p>
+                            <p class="floating-one">${vegetarian}</p>
                         </div>
                         <div class="flex flex-wrap gap-2 items-center my-1">
-                            <p class="floating flex bg-[#fadcd0] px-2 rounded-xl items-center font-semibold"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#000" fill-rule="evenodd" d="m12.6 11.503l3.891 3.891l-.848.849L11.4 12V6h1.2zM12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10s-4.477 10-10 10m0-1.2a8.8 8.8 0 1 0 0-17.6a8.8 8.8 0 0 0 0 17.6"/></svg>${element.preparationTime}</p>
-                            <p class="floating bg-[#fadcd0] px-2 rounded-xl font-semibold">${element.calories} KCAL</p>
+                            <p class="floating-one flex bg-[#fadcd0] px-2 rounded-xl items-center font-semibold"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#000" fill-rule="evenodd" d="m12.6 11.503l3.891 3.891l-.848.849L11.4 12V6h1.2zM12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10s-4.477 10-10 10m0-1.2a8.8 8.8 0 1 0 0-17.6a8.8 8.8 0 0 0 0 17.6"/></svg>${element.preparationTime}</p>
+                            <p class="floating-one bg-[#fadcd0] px-2 rounded-xl font-semibold">${element.calories} KCAL</p>
                         </div>
                         <hr class="text-[#888888] border-1 rounded-sm my-2">
                         <div class="food-card__description flex-1 overflow-y-auto px-1 py-2 my-2">
