@@ -31,12 +31,12 @@ const favBtn = () => {
         if (favorites.length === 0) {
             hideSpinner()
             const container = document.getElementById('allDishes')
+            document.getElementById("headerSec").textContent = ` Favorites meal`
             if (container) {
-                container.innerHTML = '<p class="text-center text-gray-600 py-8">No favorites yet! Add some by clicking the heart icon.</p>'
+                container.innerHTML ='<div class="flex flex-col"><p class="text-center text-gray-600 py-8">No favorites yet! Add some by clicking the heart icon.</p><button type=\"button\" onclick=\"clearFilter()\" class="floating-btn bg-[#e95417] hover:bg-[#e8a020] mx-30 py-2 rounded-lg">Go Back</button>.</div>'
             }
             return
         }
-
         // Fetch all foods and filter to only favorites
         fetch("https://mongotest2026.vercel.app/api/foods")
             .then(r => r.json())
